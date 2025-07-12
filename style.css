@@ -1,1 +1,381 @@
-����� �뢮�� ������ �� ��࠭ (ECHO) ����祭.
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-Regular.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("assets/fonts/PlayfairDisplay-Regular.ttf");
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Внешняя оболочка шапки */
+.header-wrapper {
+  position: fixed; /* 👈 закрепляем шапку сверху */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* 👈 регулируешь толщину шапки тут */
+  background-color: rgba(255, 255, 255, 0.2); /* мягкое мыло */
+  backdrop-filter: blur(16px); /* больше мыла, больше размытия */
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); /* усиливаем глубину */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px; /* горизонтальные отступы */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* на всякий случай */
+}
+
+body {
+  background: linear-gradient(135deg, #a8c0ff 0%, #74a0e2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4d2323;
+}
+
+/* --- Основные стили футера --- */
+
+.footer {
+  width: 100%; /* ✅ безопаснее, не вызывает скролл */
+  background-color: rgba(24, 55, 85, 0.3);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.06);
+  margin: 0;
+  padding: 25px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-content {
+  max-width: 960px; /* ограничение ширины контента */
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-copyright {
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.footer-links a {
+    color: #71a5c5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.rss-logo-link {
+    display: block;
+    width: 121px;
+    height: 45px;
+    background-image: url("assets/svg/rss.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.rss-logo-link:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container.main {
+  background-color: rgba(255, 255, 255, 0.15); /* полупрозрачный белый фон */
+  backdrop-filter: blur(50px); /* размытие фона позади */
+  -webkit-backdrop-filter: blur(20px); /* поддержка для Safari */
+  border-radius: 16px; /* скругление углов — можно убрать */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* мягкая внешняя тень */
+  padding: 40px; /* внутренние отступы */
+  margin: 120px auto 40px; /* отступ сверху и центрирование */
+  max-width: 960px; /* ограничение ширины */
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    font-size: 17px;
+    font-weight: 750;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 0;
+    letter-spacing: 0.02em;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #000000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: calc(100% - 40px);
+    height: 5px;
+    background-color: transparent;
+    border-radius: 0;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.nav-link:hover::before {
+    transform: translateX(-50%) scaleX(1);
+    background-color: #000000;
+}
+
+.section-item a {
+  color: #829985;
+  text-decoration: none;
+  transition: color 0.5s;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.section-item a:hover,
+.section-item a:focus {
+  color: #4d2323;
+  background-color: rgba(77, 35, 35, 0.05);
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Изменения здесь */
+.section-profile-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    flex-grow: 1;
+    text-align: center; /* Центрируем текст внутри h1 и h3 */
+}
+
+@media (min-width: 768px) {
+    .section-profile-text {
+        /* align-items: flex-start; */ /* Удалить или закомментировать, если нужно всегда центрировать */
+        /* text-align: left; */ /* Удалить или закомментировать, если нужно всегда центрировать */
+    }
+}
+
+.section-subtitle {
+    margin-top: 5px;
+    font-size: 1.2em;
+    color: #696969;
+    text-align: center; /* Убеждаемся, что этот текст тоже центрирован */
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+.profile-logo-wrapper {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-logo-inner {
+  width: 120px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.section-profile-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: top center;
+}
+
+.profile-logo-inner:hover .section-profile-logo {
+  transform: scale(1.2);
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #7f9b85;
+}
+
+.main-title {
+    font-family: "Playfair", serif;
+    font-size: 2em;
+    text-align: center; /* Убеждаемся, что этот заголовок центрирован */
+    margin-bottom: 0.15em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    position: relative;
+    background: linear-gradient(90deg, #2c3e50 0%, #34495e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-title::after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, #369ee4 0%, #1d5981 100%);
+    margin: 15px auto 0; /* Центрируем полоску */
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section Layout */
+.section-profile .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрируем лого и текстовый блок относительно друг друга */
+    /* text-align: center; */ /* Это здесь не нужно, так как текст будет центрироваться внутри profile-text */
+}
+
+/* Если вы хотите, чтобы на больших экранах лого и текст были слева, но текст внутри himself был по центру,
+    тогда этот медиа-запрос можно оставить, но убрать text-align из profile-info и из section-profile-text медиа-запроса.
+    Если всегда нужно центрировать, то удалите этот медиа-запрос. */
+@media (min-width: 768px) {
+    .section-profile .profile-info {
+        /* justify-content: flex-start; */ /* Удалить или закомментировать, если нужно всегда центрировать */
+    }
+}
+
+
+/* Contacts Section Layout */
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+@media (min-width: 600px) {
+    .contacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 960px) {
+    .contacts-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.contact-item {
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(77, 35, 35, 0.2);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item strong {
+    color: #4d2323;
+    margin-right: 5px;
+}
+
+.contacts-grid a {
+    color: #829985;
+    text-decoration: none;
+    transition: color 0.5s;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.contacts-grid a:hover,
+.contacts-grid a:focus {
+    color: #4d2323;
+    background-color: rgba(77, 35, 35, 0.05);
+    outline: none;
+}
