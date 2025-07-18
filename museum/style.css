@@ -1,1 +1,38 @@
- 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Подключаем шрифты*/
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Forum-Regular.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto-Thin.ttf");
+  font-weight: 300;
+}
+
+/*Плавная прокрутка*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Параллакс*/
+.welcome {
+  background-image: url('assets/img/parallax.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: absolute;
+  width: 1440px;
+  height: 150px;
+  left: 240px;
+  top: 0px;
+}
