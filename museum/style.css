@@ -298,7 +298,7 @@ html {
     border-radius: 0px;
 }
 
-.royal-palace {
+.content-block-1 {
     position: absolute;
     width: 440px;
     height: 424px;
@@ -306,16 +306,39 @@ html {
     top: 193px;
 }
 
-.virt-1 {
+.content-block-2 {
     position: absolute;
-    width: 440px;
-    height: 285px;
-    border-radius: 0px;
+    left: 500px;
+    top: 193px;
 }
 
-.text-1_1 {
+.content-block-3 {
     position: absolute;
-    width: 252px;
+    left: 1000px;
+    top: 193px;
+}
+
+.content-block-4 {
+    position: absolute;
+    left: 0px;
+    top: 692px;
+}
+
+.content-block-5 {
+    position: absolute;
+    left: 500px;
+    top: 692px;
+}
+
+.content-block-6 {
+    position: absolute;
+    left: 1000px;
+    top: 692px;
+}
+
+.block-title {
+    position: absolute;
+    width: 403px;
     height: 35px;
     left: 0px;
     top: 310px;
@@ -331,59 +354,8 @@ html {
     color: #000000;
 }
 
-.line-text_1 {
+.block-image {
     position: absolute;
-    width: 300px;
-    height: 2px;
-    left: 0px;
-    top: 355px;
-
-    background: #710707;
-    border-radius: 0px;
-}
-
-.text-1_2 {
-    position: absolute;
-    width: 165px;
-    height: 26px;
-    left: 0px;
-    top: 367px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 22px;
-    line-height: 26px;
-    color: #000000;
-}
-
-.text-1_3 {
-    position: absolute;
-    width: 240px;
-    height: 21px;
-    left: 0px;
-    top: 403px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 18px;
-    line-height: 21px;
-
-    color: #000000;
-}
-
-.denon-wing {
-    position: absolute;
-    width: 440px;
-    height: 424px;
-    left: 500px;
-    top: 193px;
-}
-
-.virt-2 {
-    position: absolute;
-    width: 440px;
     height: 285px;
     left: 0px;
     top: 0px;
@@ -391,25 +363,7 @@ html {
     border-radius: 0px;
 }
 
-.text-2_1 {
-    position: absolute;
-
-    height: 35px;
-    left: 0px;
-    top: 310px;
-
-    font-family: 'Forum';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 35px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-
-    color: #000000;
-}
-
-.line-text_2 {
+.block-line {
     position: absolute;
     width: 300px;
     height: 2px;
@@ -420,7 +374,7 @@ html {
     border-radius: 0px;
 }
 
-.text-2_2 {
+.block-subtitle {
     position: absolute;
     width: 165px;
     height: 26px;
@@ -432,10 +386,11 @@ html {
     font-weight: 100;
     font-size: 22px;
     line-height: 26px;
+
     color: #000000;
 }
 
-.text-2_3 {
+.block-subinfo {
     position: absolute;
     width: 240px;
     height: 21px;
@@ -449,4 +404,71 @@ html {
     line-height: 21px;
 
     color: #000000;
+}
+
+.container-explore {
+    position: absolute;
+    width: 1440px;
+    height: 865px;
+    left: 0px;
+    top: 2076px;
+}
+
+.bg-explore {
+    position: absolute;
+    width: 1920px;
+    height: 865px;
+    left: -240px;
+    top: 0px;
+
+    background: #030303;
+    border-radius: 0px;
+}
+
+.block-explore {
+    position: absolute;
+    width: 1440px;
+    height: 715px;
+    left: 0px;
+    top: 75px;
+}
+
+.explore-text {
+    position: absolute;
+    width: 660px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.line-explore {
+    position: absolute;
+    width: 660px;
+    height: 3px;
+    left: 0px;
+    top: 115px;
+
+    background: #710707;
+    border-radius: 0px;
+}
+
+.image-before {
+    position: absolute;
+    width: 440px;
+    height: 700px;
+    left: 720px;
+    top: 15px;
+
+    border-radius: 0px;
 }
