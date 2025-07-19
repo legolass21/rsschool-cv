@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum</title>
-    <link rel="icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <title>museum</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header class = "header">
-        <div class="BG"></div>
-        <div class="logo-wrapper">
-            <div class="frame"></div>
-            <h1 class="logo-title">Louvre</h1>
-        </div>
-        <nav class="header-nav">
-            <div class="menu-action">
-                <ul>
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <div class="frame"></div>
+                <h1 class="logo-title">Louvre</h1>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-list">
                     <li><a href="#visiting" class="nav-link visiting">Visiting</a></li>
                     <li><a href="#explore" class="nav-link explore">Explore</a></li>
                     <li><a href="#video" class="nav-link video">Video</a></li>
@@ -24,45 +23,79 @@
                     <li><a href="#tickets" class="nav-link tickets">Tickets</a></li>
                     <li><a href="#contacts" class="nav-link contacts">Contacts</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <main class = "main">
-        <section id="welcome" class="welcome">
-            <div class="bg-welcome"></div>
-            <div class="welcome-picture"></div>
-            <div class="welcome_head">
-                <h2 class="welcome-name">Welcome <br>to the Louvre</h2>
-                <p class="welcome-subtitle">From the castle to the museum</p>
-                <button class="welcome-button" type="button">Discover the Louvre</button>
-            </div>
-        </section>
-        <section id="visiting" class="visiting">
-            <h2>Virtual tour</h2>
-            <div class="cards-container">
-                <article class="card">
-                    <img src="assets/img/visit-card-1.jpg" alt="A grand tour hall with Roman sculptures.">
-                    <h3>Tour Eiffel</h3>
-                    <p>Discover the symbol of Paris.</p>
-                </article>
-            </div>
-        </section>
-        <section id="explore" class="explore">
-            <h2>Picture explore</h2>
-        </section>
-        <section id="video" class="video">
-            <h2>Video journey</h2>
-        </section>
-        <section id="gallery" class="gallery">
-            <h2>Art Gallery</h2>
-        </section>
-        <section id="tickets" class="tickets">
-            <h2>BUY TICKETS</h2>
-        </section>
-        <section id="contacts" class="contacts">
-            <h2>Contacts</h2>
-        </section>
+        <div class="main-container">
+            <section id="welcome" class="welcome-section">
+                <div class="BG-first"></div>
+                <div class="welcome-picture">
+                    <div class="picture_1"></div>
+                    <div class="slider-pagination">
+                        <div class="bg-slider"></div>
+                    </div>
+                </div>
+                <div class="welcom-container">
+                    <div class="welcome_head">
+                        <h2 class="welcome-name">Welcome<br>to the Louvre</h2>
+                        <p class="welcome-subtitle">From the castle to the museum</p>
+                        <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" class="welcome-button">
+                            <span class="text-button">Discover the Louvre</span></a>
+                    </div>
+                </div>
+            </section>
+            <section id="visiting" class="visiting-section">
+                <div class="container-visiting">
+                    <div class="virtual-tour"><h2 class="virtual-text">Virtual tour</h2></div>
+                    <div class="line"></div>
+                    <div class="royal-palace">
+                        <img src="assets/img/virtual/Rectangle.jpg" alt="View of the Louvre hall" class="virt-1">
+                        <h2 class="text-1_1">Royal Palace</h2>
+                        <div class="line-text_1"></div>
+                        <h3 class="text-1_2">360° Virtual Tour</h3>
+                        <h3 class="text-1_3">Google Street Panorama View</h3>
+                    </div>
+                    <div class="denon-wing">
+                        <img src="assets/img/virtual/Rectangle (2).jpg" alt="View of the Louvre hall" class="virt-2">
+                        <h2 class="text-2_1">Denon Wing</h2>
+                        <div class="line-text_2"></div>
+                        <h3 class="text-2_2">360° Virtual Tour</h3>
+                        <h3 class="text-2_3">Google Street Panorama View</h3>
+                    </div>
+                </div>
+            </section>
+            <section id="explore" class="section explore-section">
+                <div class="container">
+                    <h2>Picture explore</h2>
+                </div>
+            </section>
+            <section id="video" class="section video-section">
+                <div class="container">
+                    <h2>Video journey</h2>  
+                </div>
+            </section>
+            <section id="gallery" class="section gallery-section">
+                <div class="container">
+                    <h2>Art Gallery</h2>
+                </div>
+            </section>
+            <section id="tickets" class="section tickets-section">
+                <div class="container">
+                    <h2>BUY TICKETS</h2>
+                </div>
+            </section>
+            <section id="contacts" class="section contacts-section">
+                <div class="container">
+                    <h2>Contacts</h2>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer class = "footer"></footer>
+    <footer class = "footer">
+        <div class="container">
+            <div class="bg-footer"></div>
+        </div>
+    </footer>
 </body>
 </html>
