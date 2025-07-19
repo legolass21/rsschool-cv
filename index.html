@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/favicon.ico" />
+</head>
+<body>
+    <div class="header-wrapper">
+        <header class = "header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">English</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main class="main">
+        <div class="container main">
+            <section class="section section-profile" id="profile">
+                <div class="profile-info">
+                    <div class="profile-logo-wrapper">
+                        <div class="profile-logo-inner">
+                            <img src="./assets/img/avatar.jpg" alt="Avatar" class="section-profile-logo">
+                        </div>
+                    </div>
+                    <div class="section-profile-text"> <h1 class="section-title main-title">Andrey Aheyenka</h1>
+                        <h3 class="section-subtitle">Python Back-End Developer</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <div class="contacts-grid">
+                    <div class="contact-item">
+                        <strong>Location:</strong> Minsk, Belarus
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +375 33 3520000
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong> <a href="mailto:andryoha749@gmail.com" title="email">andryoha749@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Github:</strong> <a href="https://github.com/legolass21" title="github">legolass21</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Discord:</strong> <a href="https://discord.gg/zUr7wWYPXE" title="discord">Andrei Agehenka (@legolass21)</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Telegram:</strong> <a href="https://t.me/Lego_Lass" title="telegram">@Lego_Lass</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">Summary</h2>
+                <p>
+                    I am a Python backend developer dedicated to continuous improvement and am currently enhancing my JavaScript skills. I am passionate about web development and have successfully completed various courses by Timur Guev on stepik.org, solving a multitude of programming challenges along the way. I am also committed to consistently improving my English proficiency. Independently, I developed a project to automate Microsoft account registration using only POST and GET requests via the curl_cffi module. I further extended this project to handle registration for the Microsoft Rewards program, implementing asynchronous requests to automatically earn points.
+                </p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="section-list">
+                    <li class="section-item">Python</li>
+                    <li class="section-item">FastAPI</li>
+                    <li class="section-item">OOP</li>
+                    <li class="section-item">Git</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code</h2>
+                <pre class="pre"><code>n, m = [int(i) for i in input().split()]
+                    matrix = [[None for _ in range(m)] for _ in range(n)]
+                    num = 1
+                    for j in range(m + n - 1):
+                        for i in range(n):
+                            if j - i in range(m):
+                                matrix[i][j - i] = num
+                                num += 1
+                    for row in matrix:
+                        print(*[str(col).ljust(3) for col in row])</code></pre>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <p>Coming soon</p>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <p>Belarusian State University 2015-2019</p>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section-title">English</h2>
+                <ul class="section-list">
+                    <li class="section-item">
+                        Russian
+                        <span> - native speaker</span>
+                    </li>
+                    <li class="section-item">
+                        English
+                        <span> - A2 (B1 in process…)</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-copyright">
+                © 2025 Andrey A.
+            </div>
+            <div class="footer-links"><a href="https://github.com/legolass21" class="github-link" target="_blank" title="My GitHub Profile">GitHub Profile</a></div>
+            <a href="https://rs.school/courses/javascript-ru/" class="rss-logo-link" target="_blank" title="RSSchool Course"></a>
+        </div>
+    </footer>
+</body>
+</html>
