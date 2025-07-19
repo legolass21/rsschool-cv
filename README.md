@@ -1,1 +1,0 @@
-https://legolass21.github.io/rsschool-cv/
