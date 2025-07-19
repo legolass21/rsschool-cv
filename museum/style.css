@@ -472,3 +472,89 @@ html {
 
     border-radius: 0px;
 }
+
+
+.footer {
+    width: 1440px;
+    height: 392px;
+    left: 240px;
+    top: 8942px;
+}
+
+.container-footer {
+    position: relative;
+    width: 1920px;
+    height: 392px;
+    left: -240px;
+    top: 0px;
+}
+
+.bg-footer {
+    position: absolute;
+    width: 1920px;
+    height: 392px;
+    left: -240px;
+
+    background: #030303;
+    border-radius: 0px;
+}
+
+.last-string {
+    position: absolute;
+    width: 1440px;
+    height: 24px;
+    left: 0px;
+    top: 318px;
+}
+
+.date {
+    position: absolute;
+    width: 90px;
+    height: 22px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 22px;
+
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+}
+
+.textrs {
+    position: absolute;
+    width: 310px;
+    height: 22px;
+    left: 570px;
+    top: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+}
+
+.username {
+    position: absolute;
+    width: 113px;
+    height: 22px;
+    left: 1327px;
+    top: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+}
